@@ -1,3 +1,5 @@
+Forked from [fmahnke/jsonschema-cli](https://github.com/fmahnke/jsonschema-cli)
+
 This module provides a simple command line interface to Tom de Grunt's
 [JSON schema validator](https://github.com/tdegrunt/jsonschema).
 

@@ -1,6 +1,6 @@
 {
   "name": "jsonvalidator-cli",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Validate JSON against JSON Schema with a command line interface (CLI).",
   "main": "validateJson.js",
   "bin": {
