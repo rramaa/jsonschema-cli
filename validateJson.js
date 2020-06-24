@@ -40,7 +40,12 @@ var jsonSchema = JSON.parse(fs.readFileSync(jsonSchemaPath, {encoding: 'utf8'}))
 
 // Load user-specified schemas from filesystem.
 var schemas = schemaPaths.map(function (path) {
-  return JSON.parse(fs.readFileSync(path, {encoding: 'utf8'}));
+  try {
+    return JSON.parse(fs.readFileSync(path, {encoding: 'utf8'}));
+  } catch (e) {
+    console.log("Error loading schema: " + path)
+    throw e
+  }
 });
 
 console.log('\n', 'Validating JSON reference schemas against v4 draft.', '\n');

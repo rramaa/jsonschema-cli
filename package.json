@@ -1,5 +1,5 @@
 {
-  "name": "jsonschema-cli",
+  "name": "jsonvalidator-cli",
   "version": "0.1.2",
   "description": "Validate JSON against JSON Schema with a command line interface (CLI).",
   "main": "validateJson.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fmahnke/jsonschema-cli"
+    "url": "https://github.com/rramaa/jsonschema-cli"
   },
-  "author": "Fritz Mahnke",
+  "author": "Ramakrishna",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fmahnke/jsonschema-cli/issues"
+    "url": "https://github.com/rramaa/jsonschema-cli/issues"
   },
-  "homepage": "https://github.com/fmahnke/jsonschema-cli",
+  "homepage": "https://github.com/rramaa/jsonschema-cli",
   "dependencies": {
     "jsonschema": "^1.0.0",
     "minimist": "^1.1.0"
