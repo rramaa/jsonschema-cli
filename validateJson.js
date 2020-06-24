@@ -32,8 +32,10 @@ if (!argv.s || !argv.s.length) {
   process.exit(1);
 }
 
-console.log('Validating' + ' ' + jsonPath +  ' ' + 'against' + ' ' + schemaPaths.length +
-  ' ' + 'schemas.');
+if(jsonPath){
+  console.log('Validating' + ' ' + jsonPath +  ' ' + 'against' + ' ' + schemaPaths.length +
+    ' ' + 'schemas.');
+}
 
 // Load JSON draft 04 schema from filesystem.
 var jsonSchema = JSON.parse(fs.readFileSync(jsonSchemaPath, {encoding: 'utf8'}));
